@@ -49,13 +49,18 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::loginView(function(){
             return view('auth.login');
         });
-
+        //devolve a view para registro (formulário)
         Fortify::registerView(function(){
             return view('auth.register');
         });
-
+        //devolve a view para recuperação de senha
         FOrtify::requestPasswordResetLinkView(function(){
             return view('auth.forgot-password');
         });
+        //devolve a view para recuperação de senha
+        FOrtify::resetPasswordView(function($request){
+            return view('auth.reset-password',['request'=>$request]);
+        });
+
     }
 }
