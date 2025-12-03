@@ -20,6 +20,9 @@
                         <div>
                             <a href="{{route('register')}}">Ainda não tem conta?</a>
                         </div>
+                        <div>
+                            <a href="{{route('password.request')}}">recuperar minha senha</a>
+                        </div>
                         <div class="text-end">
                             <button type="submit" class="btn btn-secondary px-5">LOGIN</button>
                         </div>
